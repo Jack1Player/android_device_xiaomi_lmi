@@ -15,7 +15,6 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 IS_PHONE := true
-TARGET_INCLUDE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
