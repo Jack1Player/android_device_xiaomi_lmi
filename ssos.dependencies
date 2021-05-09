@@ -1,21 +1,21 @@
 [
   {
-    "remote":      "fluid-devices",
+    "remote":      "github",
     "repository":  "device_xiaomi_sm8250-common",
     "target_path": "device/xiaomi/sm8250-common",
-    "branch":      "fluid-11"
+    "branch":      "ssos"
   },
   {
-    "remote":      "fluid-devices",
+    "remote":      "github",
     "repository":  "device_xiaomi_lmi-kernel",
     "target_path": "device/xiaomi/lmi-kernel",
-    "branch":      "fluid-11"
+    "branch":      "ssos"
   },
   { 
-    "remote":      "fluid-devices",
+    "remote":      "github",
     "repository":  "vendor_xiaomi_lmi",
     "target_path": "vendor/xiaomi/lmi",
-    "branch":      "fluid-11"
+    "branch":      "lineage-18.1"
   }
 ]
 
