@@ -11,20 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
-# Inherit some common Fluid stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common ShapeShiftOS stuff.
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-FLUID_BUILD_TYPE := OFFICIAL
-
+# ShapeShiftOS stuff
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Jack1Player \
-  ro.fluid.cpu=SD865
+  ro.ssos.cpu=SD865
 
-PRODUCT_NAME := fluid_lmi
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_BLUR := true
+
+PRODUCT_NAME := ssos_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
